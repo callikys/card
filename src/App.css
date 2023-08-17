@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.map-container {
+  border: 3px solid black;
+  width: 100%; /* 원하는 너비로 조정 */
+  height: 500%; /* 원하는 높이로 조정 */
+  border-radius: 5%;
+}
+
+
+
+article {
+  text-align: center;
+}
+
+input {
+  position: relative;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  width: 70%;
+  height: 5vh;
+  border: 3px solid black;
+  border-radius: 3%;
+}
+
+button {
+  height: 5.9vh;
+  width: 15%;
+  border: 3px solid black;
+  border-radius: 3%;
+  background: #fff;
+}
+
+/* 모바일 뷰 */
+@media (max-width: 767px) {
+  .map-container {
+    width: 100%; /* 모바일 뷰에서는 지도의 너비를 가득 채움 */
+    height: 400px; /* 모바일 뷰에서는 지도의 높이를 조정 */
+    z-index: 0;
+  }
+}
+
+h3 {
+  margin-left: 40px;
+  padding: 0%;
+}
+

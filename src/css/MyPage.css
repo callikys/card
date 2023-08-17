@@ -1,0 +1,62 @@
+.myNameBox {
+    margin: 15;
+    padding: 10;
+    display: "flex";
+    border: "2px solid grey";
+    background-color: "#B9DDD7";
+    border-radius: 16;
+}
+/* 
+contentContainer: {
+    marginLeft: 8,
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    
+},
+nameText: {
+    color: "black",
+    fontSize: 16,
+    fontWeight: "bold",
+    margin: "auto",
+    paddingLeft: 20,
+},
+cardimage: {
+    width: 40,
+    height: 40,
+    color: "grey",
+}, */
+
+.addicon {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+}
+.cpbox {
+    position: relative;
+    /* width: 22.5rem; */
+    /* top: 4rem; */
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: SUIT, sans-serif;
+}
+.selected {
+    font-family: SUIT, sans-serif;
+    color: rgb(77, 161, 167);
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-underline-position: under;
+}
+.unselected {
+    font-family: SUIT, sans-serif;
+    color: black;
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-underline-position: under;
+    text-decoration: none;
+}
+
+.nounderline {
+    text-decoration: none;
+}

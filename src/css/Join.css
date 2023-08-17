@@ -1,0 +1,33 @@
+.textboxStyle {
+    margin-left: 70px;
+    width: 100%
+}
+
+h2 {
+    margin-left: 90px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.custom-input::placeholder {
+    font-size: 15px;
+}
+
+.checkbutton {
+    margin-left: 43%;
+    border-radius: 5%;
+}
+
+.checkbutton:hover {
+    margin-left: 43%;
+    background: black;
+    color: white;
+}
+
+h6 {
+    margin-left: 30%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}

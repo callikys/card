@@ -1,0 +1,144 @@
+header {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 좌우로 공간을 나누기 위해 설정 */
+  padding: 0 20px; /* 좌우 여백을 추가 */
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+}
+
+input[id='menuicon'] {
+  display: none;
+}
+
+input[id='menuicon'] + label {
+  display: block;
+  width: 40px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* 햄버거 버튼 만들기 */
+input[id='menuicon'] + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 30px;
+  background: #000;
+  transition: all 0.35s;
+}
+
+input[id='menuicon'] + label span:nth-child(1) {
+  top: 0;
+}
+
+input[id='menuicon'] + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input[id='menuicon'] + label span:nth-child(3) {
+  bottom: 0;
+}
+
+input[id='menuicon']:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: 2;
+  background: #fff;
+}
+
+input[id='menuicon']:checked + label span:nth-child(2) {
+  opacity: 0;
+  z-index: 2;
+  background: #fff;
+}
+
+input[id='menuicon']:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+  z-index: 2;
+  background: #fff;
+}
+
+div[class='sidebar'] {
+  width: 200px;
+  height: 100%;
+  background: #222;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  z-index: 1;
+  transition: all 0.35s;
+  color: beige;
+}
+
+input[id='menuicon']:checked + label + div {
+  left: 0;
+}
+
+.button1 {
+  width: 100%;
+  margin-top: 100px;
+  height: 50px;
+  background: #222;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+}
+
+.button3 {
+  width: 100%;
+  height: 50px;
+  background: #222;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+}
+
+.my-link {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+.button2 {
+  width: 100%;
+  height: 100%;
+  border-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.button1:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.button2:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+.button3:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+
+.mainlink {
+  text-align: center;
+  color: #222;
+  text-decoration: none;
+  font-size: 30px;
+}

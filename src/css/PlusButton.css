@@ -1,0 +1,12 @@
+.plus {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background: black;
+    font-size: 18px;
+    margin-top: 9px;
+    font-weight: 795;
+    margin-left: 10px;
+    border: black;
+    color: white;
+}
