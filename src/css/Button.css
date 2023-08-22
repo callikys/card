@@ -1,20 +1,31 @@
 .button {
-    border: 3px solid black;
-    width: 25vw; /* 뷰포트 너비의 25%로 지정 (화면 너비에 따라 조정됨) */
-    height: 10vh; /* 뷰포트 높이의 10%로 지정 (화면 높이에 따라 조정됨) */
-    margin-left: 28px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    background-color: #fff;
-    font-size: 15px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #fff;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  flex-shrink: 0; /* 수정된 부분: 버튼 크기 유지 */
+}
 
-  .button:hover {
-    border: 3px solid black;
-    width: 25vw; /* 뷰포트 너비의 25%로 지정 (화면 너비에 따라 조정됨) */
-    height: 10vh; /* 뷰포트 높이의 10%로 지정 (화면 높이에 따라 조정됨) */
-    margin-left: 28px;
-    margin-bottom: 10px;
-    background: black;
-    color: white;
-  }
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  max-width: 330px;
+  padding: 50px; /* 수정된 부분: 상하도 10px로 변경 */
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+.button:hover {
+  border: 3px solid black;
+  width: 100px;
+  height: 100px;
+}
+
