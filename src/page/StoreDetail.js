@@ -6,11 +6,10 @@ import "../css/StoreDetail.css"
 import { IoIosAddCircle } from "react-ionicons";
 
 function StoreDetail() {
-    
     return (
       <div className='App'>
         <Header/>
-        <StoreName test={store.store_name}/>
+        <StoreName name={store.store_name}/>
             <IoIosAddCircle className='addicon'/>
         <Card />
       </div>
