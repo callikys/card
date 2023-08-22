@@ -3,8 +3,9 @@ import Header from "../component/Header";
 import StoreName from "../component/StoreName";
 import Card from "../component/Card";
 import "../css/StoreDetail.css"
+import { IoIosAddCircle } from "react-ionicons";
 
-function StoreBenefit() {
+function StoreDetail() {
     
     return (
       <div className='App'>
@@ -16,4 +17,4 @@ function StoreBenefit() {
     );
   }
   
-  export default StoreBenefit;
+  export default StoreDetail;
