@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/Benefits.css';
 
 export default function Benefits({ benefitsData }) {
   const formatBenefitsText = (text) => {
@@ -8,17 +9,21 @@ export default function Benefits({ benefitsData }) {
   };
 
   return (
-    <div>
+    <div className="benefits">
       {benefitsData && (
         <div>
           {benefitsData.map((benefit, index) => (
-            <div key={index}>
+            <div key={index} className="benefit-container">
               {benefit["benefit_detail"] && (
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: formatBenefitsText(benefit["benefit_detail"]),
-                  }}
-                ></div>
+                <div>
+                  <div className="benefit-title">{benefit.title}</div>
+                  <div
+                    className="benefit-detail"
+                    dangerouslySetInnerHTML={{
+                      __html: formatBenefitsText(benefit["benefit_detail"]),
+                    }}
+                  ></div>
+                </div>
               )}
             </div>
           ))}

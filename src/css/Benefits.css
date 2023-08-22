@@ -1,0 +1,22 @@
+.benefits {
+    padding: 10px;
+  }
+  
+  .benefit-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  
+  .benefit-title {
+    font-weight: bold;
+    margin-right: 10px;
+    white-space: pre-wrap;
+  }
+  
+  .benefit-detail {
+    font-size: 0.9rem;
+    color: #4b4b4b;
+    white-space: pre-wrap;
+  }
+  
