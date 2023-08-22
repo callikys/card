@@ -12,6 +12,7 @@ import Login from './page/Login';
 import StoreList from './page/StoreList';
 import MyPageCard from './page/MyPageCard';
 import MyPageStore from './page/MyPageStore';
+import StoreDetail from './page/StoreDetail';
 
 // 반응형(모바일)
 const Mobile  = ({children}) => {
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/join" element={<Join />} />
         <Route exact path="/login" element={<Login />} />
         <Route path="/cardlist/detail/:cardId" element={<CardListDetail />} />
+        <Route path="/store/detail/:storeId" element={<StoreDetail />} />
         <Route exact path="/store" element={<StoreList />} />
         <Route exact path="/mypage/mystore" element={<MyPageStore />} />
         <Route exact path="/mypage/mycard" element={<MyPageCard />} />

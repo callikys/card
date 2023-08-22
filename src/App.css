@@ -31,6 +31,11 @@ input {
   border-radius: 3%;
 }
 
+.App a {
+  text-decoration: none;
+  color: inherit;
+}
+
 button {
   height: 5.9vh;
   width: 15%;

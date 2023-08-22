@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Header from '../component/Header';
 import axios from 'axios';
 import Store from '../component/Store';
+import { Link } from 'react-router-dom';
 
 
 function StoreList() {
@@ -38,8 +39,14 @@ function StoreList() {
       {/* <MySearchBar onSearch={handleSearch} /> */}
       {/* <StoreList searchTerm={searchTerm} /> */}
       {stores.map((store) => (
-        <Store name={store.store_name} category={store.store_category}/>
-      ))}
+      <Link key={store.storeid} to={`/store/detail/${store.storeid}`}>
+        <Store
+          id={store.storeid}
+          name={store.store_name}
+          category={store.store_category}
+        />
+      </Link>
+    ))}
     </div>
   );
 }
