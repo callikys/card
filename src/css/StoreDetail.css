@@ -1,0 +1,14 @@
+.storenamebox {
+    margin: 20px;
+    padding: 10px;
+    /* border: 1px solid grey; */
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+}
+
+.addicon {
+    width: 23px;
+    height: 23px;
+    margin-left: auto;
+}
