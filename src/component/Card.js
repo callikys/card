@@ -39,7 +39,7 @@ function Card(props){
     return (
     <div style={styles.wrapper}>
         <div style={styles.contentContainer}>
-            <div className="imgbox">
+            <div className="imgbox2">
                 <img className="img" src={props.cardImg}></img>
             </div>
              <span style={styles.nameText}>{props.name}</span>

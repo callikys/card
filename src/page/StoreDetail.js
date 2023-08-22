@@ -11,7 +11,7 @@ function StoreDetail() {
         <Header/>
         <StoreName name={store.store_name}/>
             <IoIosAddCircle className='addicon'/>
-        <Card />
+        <Card name={card.card_name} cardImg={card.card_image}/>
       </div>
     );
   }
