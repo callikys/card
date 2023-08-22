@@ -4,6 +4,7 @@ import Card from "../component/Card";
 import User from "../component/User";
 import axios from 'axios';
 import "../css/MyPage.css";
+import "../css/CardBox.css";
 import { Link } from 'react-router-dom';
 
 function MyPageCard() {
