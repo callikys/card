@@ -10,7 +10,7 @@ function StoreDetail() {
     return (
       <div className='App'>
         <Header/>
-        <StoreName name={store.store_name}/>
+        <StoreName test={store.store_name}/>
             <IoIosAddCircle className='addicon'/>
         <Card />
       </div>
