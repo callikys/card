@@ -4,6 +4,7 @@ import StoreName from "../component/StoreName";
 import Card from "../component/Card";
 import "../css/StoreDetail.css"
 import { IoIosAddCircle } from "react-ionicons";
+import axios from 'axios';
 
 function StoreDetail() {
     return (
