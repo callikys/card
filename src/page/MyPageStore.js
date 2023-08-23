@@ -38,10 +38,17 @@ function MyPageStore() {
             <Header/>
             <User username={username} />
             <div className="cpbox">
-            <Link to = '/mypage/mycard' ><span>내 카드</span></Link>
+            <Link className="no-underline"  to = '/mypage/mycard' ><span>내 카드</span></Link>
             <span className="selected">즐겨찾기</span>
             </div>
-            {data && data.map((store) => <Store name={store.store_name} />)}
+            {data && data.map((store) => (
+  <Link className="no-underline" 
+    key={store.storeid} 
+    to={`/store/detail/${store.storeid}`}
+  >
+    <Store name={store.store_name} />
+  </Link>
+))}
             
         </div>
         

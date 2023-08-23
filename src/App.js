@@ -30,7 +30,7 @@ function App() {
         <Route exact path="/login" element={<Login />} />
         <Route path="/cardlist/detail/:cardId" element={<CardListDetail />} />
         <Route path="/store/detail/:storeId" element={<StoreDetail />} />
-        <Route exact path="/store" element={<StoreList />} />
+        <Route exact path="/store/:category_number" element={<StoreList />} />
         <Route exact path="/mypage/mystore" element={<MyPageStore />} />
         <Route exact path="/mypage/mycard" element={<MyPageCard />} />
       </Routes>

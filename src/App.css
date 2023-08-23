@@ -6,6 +6,11 @@
   height: 100vh;
 }
 
+.searchPlace {
+  width: 75%;
+  margin-top: 0;
+  margin-left: 20px;
+}
 .map-container {
   border: 3px solid black;
   width: 100%; /* 원하는 너비로 조정 */
@@ -19,11 +24,8 @@ article {
 
 input {
   position: relative;
-  margin-left: 150px;
-  margin-top: 80px;
-  margin-bottom: -10px;
   margin-right: 0px;
-  width: 40%;
+  width: 70%;
   height: 5vh;
   border: 3px solid black;
   border-radius: 3%;
@@ -53,5 +55,10 @@ button {
 h3 {
   margin-left: 40px;
   padding: 0%;
+}
+
+.no-underline {
+  text-decoration: none;
+  color: black;
 }
 

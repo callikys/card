@@ -28,16 +28,22 @@ function StoreDetail() {
               Authorization: `Bearer ${token}`,
             },
           };
+          // Fetch store data
           const response = await axios.get(
             `http://localhost:8080/store/detail/${storeId}`,
             config
           );
           setStoreData(response.data);
-          const isFavoriteResponse = await axios.get(
+
+          // Check if the store is in user's favorites list
+          const favoriteStoresResponse = await axios.get(
             `http://localhost:8080/mypage/mystore`,
             config
           );
-          setIsFavorite(isFavoriteResponse.data.isFavorite);
+          
+         // favoriteStores 배열 내에 storeId 가 포함되어 있는지 검사합니다.
+         setIsFavorite(favoriteStoresResponse.data.some(store => store.storeid === parseInt(storeId)));
+
         } catch (error) {
           console.error(error);
         }

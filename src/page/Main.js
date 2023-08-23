@@ -11,6 +11,7 @@ import { TbBuildingCarousel,TbDotsDiagonal } from "react-icons/tb";
 import { BsBuildings } from "react-icons/bs"; 
 import { MdOutlineLocalGasStation } from "react-icons/md"; 
 import { FiBookOpen } from "react-icons/fi"; 
+import { Link } from 'react-router-dom';
 
 function Main() {
     const [responseData, setResponseData] = useState(null);
@@ -31,19 +32,19 @@ function Main() {
         <Mobile>
             <div>
                 <Header></Header>
-                <input type='text' placeholder='장소를 검색하세요.'/>
-                <button><BiSearchAlt size="3em"/></button>
+                <input type='text' placeholder='장소를 검색하세요.' className='searchPlace'/>
+                <button style={{position: 'relative', top: '13px', left: '5px'}}><BiSearchAlt size="3em"/></button>
                 <div className='button-container'>
-                    <Button title='카페' icon={() => <MdOutlineLocalCafe size="2em" />} />
-                    <Button title='음식점' icon={() => <GrCafeteria size="2em" />} />
-                    <Button title='편의점' icon={() => <Ri24HoursFill size="2em" />} />
-                    <Button title='영화관' icon={() => <BiCameraMovie size="2em" />} />
-                    <Button title='테마파크' icon={() => <TbBuildingCarousel size="2em" />} />
-                    <Button title='마트' icon={() => <MdOutlineLocalGroceryStore size="2em" />} />
-                    <Button title='백화점' icon={() => <BsBuildings size="2em" />} />
-                    <Button title='주유소' icon={() => <MdOutlineLocalGasStation size="2em" />} />
-                    <Button title='도서' icon={() => <FiBookOpen size="2em" />} />
-                    <Button title='기타' icon={() => <TbDotsDiagonal size="2em"/>} />
+                <Link className="no-underline" to={`/store/${2}`}><Button title='카페' keyNum = '2' icon={() => <MdOutlineLocalCafe size="2em" />} /></Link>
+                <Link className="no-underline"  to={`/store/${1}`}><Button title='음식점' keyNum = '1'  icon={() => <GrCafeteria size="2em" />} /></Link>
+                <Link className="no-underline"  to={`/store/${8}`}><Button title='편의점' keyNum = '8'  icon={() => <Ri24HoursFill size="2em" />} /></Link>
+                <Link className="no-underline"  to={`/store/${7}`}><Button title='영화관' keyNum = '7'  icon={() => <BiCameraMovie size="2em" />} /></Link>
+                <Link className="no-underline"  to={`/store/${6}`}><Button title='테마파크' keyNum = '6'  icon={() => <TbBuildingCarousel size="2em" />} /></Link>
+                <Link className="no-underline"  to={`/store/${3}`}><Button title='마트' keyNum = '3'  icon={() => <MdOutlineLocalGroceryStore size="2em" />} /></Link>
+                <Link className="no-underline"  to={`/store/${4}`}><Button title='백화점' keyNum = '4'  icon={() => <BsBuildings size="2em" />} /></Link>
+                <Link className="no-underline"  to={`/store/${5}`}><Button title='주유소' keyNum = '5'  icon={() => <MdOutlineLocalGasStation size="2em" />} /></Link>
+                <Link className="no-underline"  to={`/store/${9}`}><Button title='도서' keyNum = '9'  icon={() => <FiBookOpen size="2em" />} /></Link>
+                <Link className="no-underline"  to={`/store/${13}`}><Button title='기타' keyNum = '13'  icon={() => <TbDotsDiagonal size="2em"/>} /></Link>
                 </div>
             </div>
         </Mobile>

@@ -6,6 +6,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Mobile from '../component/Mobile';
 import axios from 'axios';
+import { BiCameraMovie, BiSearchAlt } from "react-icons/bi"; 
 
 function CardList({}) {
   const [selectedOption, setSelectedOption] = useState('');
@@ -64,8 +65,9 @@ function CardList({}) {
           placeholder='카드를 검색하세요.'
           value={searchKeyword}
           onChange={handleSearchInputChange}
+          className='searchCard'
         />
-        <button onClick={handleSearchClick}>검색</button>
+        <button style={{position: 'relative', top: '13px', left: '5px'}} onClick={handleSearchClick}><BiSearchAlt size="3em"/></button>
         <select className='.select' name='factory' onChange={handleSelectChange}>
           <option value=''>전체보기</option>
                 <option value='KB국민카드'>KB국민카드</option>

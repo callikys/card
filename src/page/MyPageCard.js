@@ -39,12 +39,12 @@ function MyPageCard() {
             <User username={username} />
             <div className="cpbox">
                 <span className="selected">내 카드</span>
-                <Link to="/mypage/mystore">
+                <Link className="no-underline"  to="/mypage/mystore">
                     <span>즐겨찾기</span>
                 </Link>
             </div>
             {data && data.map((card, index) => (
-  <Link to={`/cardlist/detail/${encodeURIComponent(card.cardid)}`} key={index}>
+  <Link className="no-underline"  to={`/cardlist/detail/${encodeURIComponent(card.cardid)}`} key={index}>
     <Card name={card.card_name} cardImg={card.card_image} />
   </Link>
 ))}
