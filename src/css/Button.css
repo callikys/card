@@ -7,6 +7,7 @@
   width: 100px;
   height: 100px;
   background-color: #fff;
+  margin-bottom: 0cap;
   font-size: 15px;
   cursor: pointer;
   flex-shrink: 0; /* 수정된 부분: 버튼 크기 유지 */

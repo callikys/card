@@ -13,19 +13,17 @@
   border-radius: 5%;
 }
 
-
-
 article {
   text-align: center;
 }
 
 input {
   position: relative;
-  margin-left: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 20px;
-  width: 70%;
+  margin-left: 150px;
+  margin-top: 80px;
+  margin-bottom: -10px;
+  margin-right: 0px;
+  width: 40%;
   height: 5vh;
   border: 3px solid black;
   border-radius: 3%;
@@ -37,9 +35,8 @@ input {
 }
 
 button {
-  height: 5.9vh;
-  width: 15%;
-  border: 3px solid black;
+  width: auto;
+  border: 3px solid #fff;
   border-radius: 3%;
   background: #fff;
 }
